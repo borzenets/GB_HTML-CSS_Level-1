@@ -6,13 +6,14 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-	<ul>
+	<ul class="menu">
 		<li><a href="index.html">Главная</a></li>
 		<li><a href="catalog.html">Каталог</a></li>
-		<li><a href="#">Контакты</a></li>
+		<li class="active">Контакты</li>
 	</ul>
 	<hr>
 	<h1>MyShop Контакты</h1>
@@ -33,17 +34,17 @@
             <br><br>
             <label>
                 Mail:
-                <input type="email" name="mail" placeholder="ivan@mail.ru" size="35">
+                <input type="email" name="mail" placeholder="ivan@mail.ru">
             </label>
             <br><br>
             <label>
                 Тема:
-                <input type="text" name="theme" placeholder="Тема сообщения" size="35">
+                <input type="text" name="theme" placeholder="Тема сообщения">
             </label>
             <br><br>
             <label>
                 Пожалуйста введите текст сообщения и нажмите &laquo;Отправить&raquo;.<br><br>
-                <textarea name="message" cols="55" rows="8"></textarea>
+                <textarea name="message"></textarea>
             </label>
             <br>
             <input type="submit" value="Отправить">

@@ -1,0 +1,118 @@
+body {
+	background-color: #f8f8f8;
+}
+
+/* Стили Меню */
+.menu li {
+	display: inline;
+	list-style-type: none;
+	font-variant: small-caps;
+	font-family: sans-serif;
+	border: solid 1px darkgray;
+	padding: 6px 10px 5px;
+	margin: 5px;
+}
+
+.menu li a {
+	text-decoration: none;
+    color: black;
+}
+
+.menu li:hover {
+	box-shadow: 0 0 5px darkgray;
+}
+
+.menu>.active {
+	background-color: darkgray;
+}
+
+/* Заголовки */
+
+h1, h2 {
+    color: black;
+    font-weight: 400;
+    background-color: #eaeaea;
+    font-size: 18px;
+}
+
+.h1_main {
+    font-size: 22px;
+}
+
+
+/* Оформление страниц товара */
+
+.prod_brief_descr {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.prod_full_descr {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+ul.prod_charact {
+    color: #505050;
+    font-size: 15px;
+}
+
+ul.prod_charact>li {
+    list-style-type: none;
+    padding-left: 1.5em;
+    background-image: url(../favicon.ico);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: left center;
+    line-height: 20px;
+
+}
+
+.prod_price {
+    color:red;
+    font-size: 18px;
+}
+
+.prod_img {
+    width: 180px;
+    border: solid 3px darkgrey;
+}
+
+/* Оформление форм */
+
+form {
+    color: darkblue;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+fieldset {
+    width: 400px;
+}
+
+input {
+    color: blue;
+    font-size: 15px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 300px;
+    padding: 4px 6px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 360px;
+    height: 150px;
+    color: blue;
+    font-size: 15px;
+}
+
