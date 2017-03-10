@@ -4,7 +4,7 @@ body {
 
 /* Стили Меню */
 .menu li {
-	display: inline;
+	display: inline-block;
 	list-style-type: none;
 	font-variant: small-caps;
 	font-family: sans-serif;
