@@ -86,7 +86,6 @@ header .menu-header {
 	list-style-type: none;
 	font-variant: small-caps;
 	font-family: Seravek;
-	/*border: solid 1px darkgray;*/
 	padding: 6px 25px 5px;
 	margin: 0 0 0 0;
 }
@@ -147,6 +146,31 @@ a:hover {
 
 div .main-page {
 	text-align: center;
+}
+
+/* Стили страници Каталог */
+
+ul.catalog .item {
+	display: inline-block;
+	list-style-type: none;
+	width: 200px;
+	height: 240px;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 0 0 0 3px rgba(171, 115, 21, 0.3);
+	margin: 8px 5px 0 0;
+}
+
+ul.catalog .item img {
+	width: 150px;
+	height: 180px;
+	margin-top: 7px;
+}
+
+ul.catalog .item input[type="button"] {
+	margin-top: 8px;
+	font-size: 1em;
+	padding: 3px 5px;
 }
 
 /* Оформление страниц товара */
