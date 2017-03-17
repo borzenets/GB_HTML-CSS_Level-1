@@ -123,7 +123,9 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.1em;
+	padding: 3px 8px;
+	background-color: rgba(255, 222, 115, 0.2);
 }
 
 /* Все станицы */
@@ -161,16 +163,41 @@ ul.catalog .item {
 	margin: 8px 5px 0 0;
 }
 
+ul.catalog .item:hover {
+	box-shadow: 0 0 0 4px rgba(171, 115, 21, 0.4);
+}
+
 ul.catalog .item img {
 	width: 150px;
 	height: 180px;
 	margin-top: 7px;
 }
 
-ul.catalog .item input[type="button"] {
+ul.catalog .item input.cat-button {
 	margin-top: 8px;
-	font-size: 1em;
+	font-size: 0.8em;
 	padding: 3px 5px;
+	border-radius: 3px;
+}
+
+ul.catalog .item input.buy {
+	color: firebrick;
+	background-color: rgba(255, 222, 115, 0.7);
+}
+
+ul.catalog .item input.buy:hover {
+	color: firebrick;
+	background-color: rgba(255, 222, 115, 1);
+}
+
+ul.catalog .item input.read-more {
+	color: grey;
+	background-color: rgba(255, 222, 115, 0.7);
+}
+
+ul.catalog .item input.read-more:hover {
+	color: grey;
+	background-color: rgba(255, 222, 115, 1);
 }
 
 /* Оформление страниц товара */
@@ -180,6 +207,7 @@ ul.catalog .item input[type="button"] {
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
+	text-align: justify;
 }
 
 .prod_full_descr {
@@ -187,16 +215,49 @@ ul.catalog .item input[type="button"] {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: left;
+    text-align: justify;
 }
 
-ul .prod_charact {
+.prod_brief {
+	overflow: hidden;
+}
+
+.prod_brief h2 {
+	margin-top: 0;
+	color: #ab7315;
+}
+
+.prod_brief button.btnCart {
+	color: firebrick;
+	font-size: 1em;
+	padding: 6px 20px;
+	border-radius: 3px;
+	background-color: #FFDE73;
+}
+
+.prod_brief button.btnCart:hover {
+	background-color: #FFB440;
+}
+
+.prod_brief button.btnCart:active {
+	background-color: greenyellow;
+}
+
+div.prod_charact {
+	clear: both;
+}
+
+.prod_charact h2 {
+	color: #ab7315;
+}
+
+ul .l_prod_charact {
     color: #505050;
     font-size: 15px;
 }
 
 .t_prod_charact {
-	border-collapse: collapse
+	border-collapse: collapse;	
 }
 
 .t_prod_charact tr:nth-child(2n) {
@@ -228,12 +289,18 @@ ul.prod_charact>li {
 }
 
 .prod_img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 25px;
+}
+
+.prod_img img {
     width: 180px;
     border: solid 3px darkgrey;
 }
 
-.prod_img:hover {
-	border: solid 3px #f8f8f8;
+.prod_img img:hover {
+	border: solid 3px transparent;
 }
 
 /* Оформление форм */
